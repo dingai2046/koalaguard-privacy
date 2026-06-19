@@ -12,24 +12,33 @@ small{color:#888}
 </head>
 <body>
 <h1>Koala Guard – Privacy Policy</h1>
-<small>Last updated: May 2, 2026</small>
+<small>Last updated: June 19, 2026</small>
 
 <h2>Summary</h2>
-<p>Koala Guard is a privacy-protection utility that runs entirely on your Mac. It does <strong>not</strong> collect, store, transmit, or share any personal data. There are no servers, no analytics, and no third-party SDKs.</p>
+<p>Koala Guard is a privacy-protection utility that runs entirely on your Mac. All processing, including all face detection and face recognition, happens on-device. Koala Guard has no servers, no analytics, and no third-party SDKs, and <strong>nothing — including face data — is ever transmitted off your Mac or shared with anyone.</strong></p>
 
 <h2>Camera Use</h2>
-<p>Koala Guard accesses the built-in or connected camera <strong>only</strong> to detect the number of human faces in front of your Mac in real time. This face-count detection happens entirely on-device using Apple's Vision framework. <strong>No image, video, or biometric data is ever stored, saved to disk, or transmitted off your device.</strong></p>
-<p>Camera frames are processed in memory and immediately discarded.</p>
+<p>Koala Guard accesses the built-in or connected camera <strong>only</strong> to detect faces in front of your Mac and to recognize your own enrolled face, in real time, using Apple's on-device Vision framework. Live camera frames are processed in memory and immediately discarded. <strong>No image or video is ever saved to disk or transmitted off your device.</strong></p>
+
+<h2>Face Data</h2>
+<p>This section explains exactly how Koala Guard handles face data.</p>
+<ul>
+<li><strong>What is collected:</strong> When you choose to enroll a face ("Add My Face" / "Trusted Faces"), Koala Guard generates a numerical <em>feature print</em> of that face using Apple's Vision framework (<code>VNFeaturePrintObservation</code>), plus a small thumbnail image of the face used only to show you which face you enrolled. No photographs or video of you are otherwise stored. If you never enroll a face, no face data is stored at all.</li>
+<li><strong>How it is used:</strong> The stored feature print is used solely, on your Mac, to tell <em>you</em> apart from other people in front of the camera. When monitoring is on, each face seen is compared on-device against your enrolled face; if a face that is not yours appears, Koala Guard hides or covers your protected apps and restores them when only you remain. The face data is used for no other purpose.</li>
+<li><strong>Sharing / third parties:</strong> Face data is <strong>never</strong> shared with us or any third party, and is never uploaded to any server. There are no third-party SDKs or analytics. It stays on your Mac.</li>
+<li><strong>Where it is stored:</strong> Enrolled face data is stored only in Koala Guard's local Application Support folder on your Mac.</li>
+<li><strong>How long it is retained:</strong> Enrolled face data is kept on your Mac until you delete the trusted face inside the app or uninstall Koala Guard, at which point it is removed. You can delete any enrolled face at any time from the Trusted Faces screen.</li>
+</ul>
 
 <h2>Data Collection</h2>
-<p>Koala Guard collects <strong>zero</strong> personal data. Specifically:</p>
+<p>Apart from the on-device face data described above, Koala Guard collects <strong>zero</strong> personal data. Specifically:</p>
 <ul>
 <li>No user identifiers, accounts, or sign-ins</li>
 <li>No analytics, telemetry, or crash reporting</li>
 <li>No advertising identifiers</li>
 <li>No location data</li>
 <li>No contacts, photos, calendars, or other personal content</li>
-<li>No camera images, videos, or face data leave your Mac</li>
+<li>No camera images, videos, or face data ever leave your Mac</li>
 </ul>
 
 <h2>Settings &amp; Preferences</h2>
